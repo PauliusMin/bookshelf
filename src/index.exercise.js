@@ -9,7 +9,7 @@ import '@reach/dialog/styles.css'
 const LoginForm = ({onSubmit, buttonText}) => {
   const [formData, setFormData] = React.useState({username: '', password: ''})
 
-  const handleOnChange = event => {
+  const handleFormChange = event => {
     event.preventDefault()
 
     setFormData(formData => {
@@ -29,7 +29,7 @@ const LoginForm = ({onSubmit, buttonText}) => {
         <input
           id="username"
           value={formData.username}
-          onChange={handleOnChange}
+          onChange={handleFormChange}
         />
       </div>
       <div>
@@ -38,7 +38,7 @@ const LoginForm = ({onSubmit, buttonText}) => {
           id="password"
           type="password"
           value={formData.password}
-          onChange={handleOnChange}
+          onChange={handleFormChange}
         />
       </div>
       <div>
