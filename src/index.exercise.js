@@ -48,7 +48,6 @@ const LoginForm = ({onSubmit, buttonText}) => {
   )
 }
 
-// 🐨 you'll also need to import the Logo component from './components/logo'
 const App = () => {
   const [openModal, setOpenModal] = React.useState('none')
   const close = () => setOpenModal('none')
